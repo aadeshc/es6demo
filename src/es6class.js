@@ -21,22 +21,51 @@ class ES6Demo extends React.Component {
 
     }
     componentDidMount() {
-        arrayobjects()
-        scopedemo();
+
+
 
     }
-
-
-
 }
 
 
-const scopedemo = () => {
+const scopedemo = (() => {
+
     //where to lookfor things
     // who is looking for things
     //javascript has function scope
     //if a variable is not declared ans assigned a value , it will be globally declared. use strict mode to avoid this
-}
+    //eval helps to use function from string eval('2+2'),always avoid it. use window.Function instead
+    //with keyword extends the existing scope. avoid. 
+
+
+    //IIFE pattern - Immediately Invoked Function Expression
+    /*
+             var foo="foo" ;
+                     (function(){
+                          var foo = "foo2"
+                          console.log(foo)
+                        }
+                      )()
+             console.log(foo)
+
+             this will print foo and foo2 as added () will force function to be called immediately
+     /
+
+     //let attaches block scope to block where its declared  while var attaches it to function scope
+     //in compile phase variable declaration are moved to top , that is called hositing
+
+
+
+
+
+
+
+
+
+
+    */
+
+})();
 
 
 const arrayobjects = () => {
